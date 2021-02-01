@@ -1,0 +1,14 @@
+//* 時鐘[圓形]框+半透底
+
+.box {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+  backdrop-filter: blur(25px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  //! 啟用[背景]動畫 效果&循環時間
+  animation: animate 5s ease-in-out infinite;
+  animation-delay: -2.5s;
+}

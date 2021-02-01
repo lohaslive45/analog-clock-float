@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//! 製作[背景]動畫 關鍵畫格 上移&下移
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@import "./body"; //* 三色背景大底
+
+@import "./con"; //* 時鐘下方[陰影]
+
+@import "./box"; //* 時鐘[圓形]框+半透底
+
+@import "./clock"; //* [鐘面內]+立體陰影
+
+@import "./hr-mn-sc"; //* 時針/分針/秒針 設定
